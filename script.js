@@ -1,8 +1,9 @@
-window.onload = function() {
-    const text = document.getElementById('mirrorText');
-    text.style.opacity = 1;
-
-    setTimeout(() => {
-        document.getElementById('content').style.display = 'block';
-    }, 7000); // Adjust this delay based on your animation duration
-};
+// JavaScript (place at the end of your body tag in index.html or in a separate file)
+window.addEventListener('scroll', function() {
+    var header = document.querySelector('header');
+    if (window.scrollY > 0) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
