@@ -1,68 +1,25 @@
-/* styles.css */
-
-/* Reset default margin and padding */
-* {
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-/* Basic styles */
-body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+    background-color: #fff; /* Adjust background color as needed */
+    text-align: center; /* Center content horizontally */
 }
 
-header {
-    background-color: #f8f8f8;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    transition: background-color 0.3s ease;
+main {
+    padding: 20px;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-}
-
-.logo {
-    max-width: 100px; /* Adjust according to your logo size */
-    transition: max-width 0.3s ease;
-}
-
-.logo img {
+video {
     width: 100%;
     height: auto;
 }
 
-header.scrolled {
-    background-color: #fff; /* Change to a different color or style when scrolled */
-}
-
-main {
-    margin-top: 80px; /* Adjust according to your header height */
-}
-
-#fragrance {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.fragrance-image {
-    max-width: 400px; /* Adjust according to your image size */
-    margin-bottom: 20px;
-}
-
 .fragrance-details {
     max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
 }
 
 h1 {
