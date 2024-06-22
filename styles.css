@@ -1,61 +1,79 @@
-body {
+/* styles.css */
+
+/* Reset default margin and padding */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styles */
+body {
     font-family: Arial, sans-serif;
-    overflow-x: hidden;
-}
-
-.mirror {
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-}
-
-.steam {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('/mnt/data/steam.jpg') no-repeat center center fixed;
-    background-size: cover;
-    z-index: 1;
-    animation: steam 3s linear forwards;
-}
-
-.text {
-    font-family: 'Great Vibes', cursive;
-    font-size: 5em;
-    color: transparent;
-    -webkit-text-stroke: 2px white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    opacity: 0;
-    animation: writeText 4s ease-in-out 3s forwards;
-}
-
-@keyframes steam {
-    0% { opacity: 1; }
-    100% { opacity: 0; }
-}
-
-@keyframes writeText {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
-.content {
-    background: white;
-    padding: 20px;
-    text-align: center;
-    display: none;
-}
-
-.prompt {
-    font-size: 1.5em;
-    margin-top: 20px;
     line-height: 1.6;
+}
+
+header {
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    max-width: 100px; /* Adjust according to your logo size */
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    margin-top: 80px; /* Adjust according to your header height */
+}
+
+#fragrance {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.fragrance-image {
+    max-width: 400px; /* Adjust according to your image size */
+    margin-bottom: 20px;
+}
+
+.fragrance-details {
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.description {
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+footer {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    width: 100%;
 }
