@@ -7,12 +7,20 @@ body {
 
 .mirror {
     height: 100vh;
-    background: url('/mnt/data/steamymirror.jpg') no-repeat center center fixed;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: relative;
+    overflow: hidden;
+}
+
+.steam {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/mnt/data/steam.jpg') no-repeat center center fixed;
+    background-size: cover;
+    z-index: 1;
+    animation: steam 3s linear forwards;
 }
 
 .text {
@@ -21,8 +29,22 @@ body {
     color: transparent;
     -webkit-text-stroke: 2px white;
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
     opacity: 0;
-    transition: opacity 3s ease-in-out;
+    animation: writeText 4s ease-in-out 3s forwards;
+}
+
+@keyframes steam {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@keyframes writeText {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 .content {
@@ -37,4 +59,3 @@ body {
     margin-top: 20px;
     line-height: 1.6;
 }
-
