@@ -1,4 +1,4 @@
-// JavaScript (place at the end of your body tag in index.html or in a separate file)
+// JavaScript for header scroll effect (if used)
 window.addEventListener('scroll', function() {
     var header = document.querySelector('header');
     if (window.scrollY > 0) {
@@ -7,3 +7,4 @@ window.addEventListener('scroll', function() {
         header.classList.remove('scrolled');
     }
 });
+
