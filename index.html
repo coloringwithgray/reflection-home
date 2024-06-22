@@ -10,7 +10,6 @@
     <header>
         <nav>
             <div class="logo">
-                <!-- Replace 'logo.svg' with the path to your logo image -->
                 <img src="logo.svg" alt="Coloring with Gray Logo">
             </div>
         </nav>
@@ -19,8 +18,7 @@
     <main>
         <section id="fragrance">
             <div class="fragrance-image">
-                <!-- Replace 'fragrance.jpg' with the path to your fragrance image -->
-                <img src="fragrance.jpg" alt="Reflection of (you) Fragrance">
+                <img src="mirror.jpg" alt="Reflection of (you) Fragrance">
             </div>
             <div class="fragrance-details">
                 <h1>Reflection of (you)</h1>
@@ -34,5 +32,17 @@
     <footer>
         <p>&copy; 2024 Coloring with Gray. All rights reserved.</p>
     </footer>
+
+    <script>
+        // JavaScript for header scroll effect (if used)
+        window.addEventListener('scroll', function() {
+            var header = document.querySelector('header');
+            if (window.scrollY > 0) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
 </html>
