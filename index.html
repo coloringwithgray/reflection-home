@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflections of (You)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Dancing Script', cursive;
+            background: linear-gradient(to bottom, #e0f7fa, #80deea);
+            text-align: center;
+            color: #006064;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .reflection {
+            font-size: 3em;
+            position: relative;
+        }
+
+        .reflection::after {
+            content: attr(data-text);
+            display: block;
+            color: rgba(0, 96, 100, 0.5);
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            transform: scaleY(-1);
+            opacity: 0.7;
+            fil
