@@ -7,19 +7,11 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="logo.svg" alt="Coloring with Gray Logo">
-            </div>
-        </nav>
-    </header>
-
     <main>
         <section id="fragrance">
             <div class="fragrance-image">
-                <!-- Embedding video with loop attribute -->
-                <video width="400" controls loop>
+                <!-- Embedding video with autoplay and muted attributes -->
+                <video autoplay muted loop>
                     <source src="mirror.mov" type="video/quicktime">
                     Your browser does not support the video tag.
                 </video>
@@ -37,16 +29,6 @@
         <p>&copy; 2024 Coloring with Gray. All rights reserved.</p>
     </footer>
 
-    <script>
-        // JavaScript for header scroll effect (if used)
-        window.addEventListener('scroll', function() {
-            var header = document.querySelector('header');
-            if (window.scrollY > 0) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
