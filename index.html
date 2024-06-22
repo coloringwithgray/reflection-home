@@ -5,47 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reflections of (You)</title>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            overflow-x: hidden;
-        }
-
-        .mirror {
-            height: 100vh;
-            background: url('/mnt/data/steamymirror.jpg') no-repeat center center fixed;
-            background-size: cover;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-        }
-
-        .text {
-            font-family: 'Great Vibes', cursive;
-            font-size: 5em;
-            color: transparent;
-            -webkit-text-stroke: 2px white;
-            position: absolute;
-            opacity: 0;
-            transition: opacity 3s ease-in-out;
-        }
-
-        .content {
-            background: white;
-            padding: 20px;
-            text-align: center;
-            display: none;
-        }
-
-        .prompt {
-            font-size: 1.5em;
-            margin-top: 20px;
-            line-height: 1.6;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="mirror">
@@ -56,16 +16,6 @@
             Reflections of You is our inaugural fragrance at Coloring with Gray, designed to embody the art of collaboration. This "second skin" scent blends seamlessly with your natural chemistry, creating a unique and personal aroma. While it shines on its own, its true magic happens when it interacts with your skin, developing a fragrance that is distinctly yours. With Reflections of You, you become a co-creator, adding your unique essence to our art.
         </div>
     </div>
-    <script>
-        window.onload = function() {
-            const text = document.getElementById('mirrorText');
-            text.style.opacity = 1;
-
-            setTimeout(() => {
-                window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
-                document.getElementById('content').style.display = 'block';
-            }, 3000);
-        };
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
